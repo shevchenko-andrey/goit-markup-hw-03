@@ -1,0 +1,199 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --master-leter-spacing: 0.03em;
+  --accent-color: #2196f3;
+  --master-text-color: #757575;
+  --master-heder-color: #212121;
+  --secondary-text-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+/* =====================HEADER=======================*/
+.logo-link {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: var(--master-leter-spacing);
+  color: #000000;
+}
+.logo-edd-color {
+  color: #2196f3;
+}
+.menu,
+.header-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact-link {
+  color: var(--master-text-color);
+}
+.menu-link {
+  color: var(--master-heder-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+/* =====================HERO========================= */
+.hero {
+  background-color: #2f303a;
+}
+.hero-headline {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.button {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: var(--main-font);
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+}
+/* ====================MAIN========================= */
+
+/* ============Features OF OUR COMPANY===============*/
+
+.feature-section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: var(--master-leter-spacing);
+  text-transform: uppercase;
+  color: var(--master-heder-color);
+}
+.feature-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: var(--master-leter-spacing);
+  color: var(--master-text-color);
+}
+/* <=========================WHAT-WE-DO and TEAM============================= */
+.section-head {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: var(--master-leter-spacing);
+  color: var(--master-heder-color);
+}
+.team-section {
+  background-color: #f5f4fa;
+}
+.team-head {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: var(--master-leter-spacing);
+  color: var(--master-heder-color);
+}
+.team-section-text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: var(--master-leter-spacing);
+  color: var(--master-text-color);
+}
+/* =======================FOOTER========================= */
+.footer {
+  background-color: #2f303a;
+}
+.logo-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: var(--master-leter-spacing);
+  color: var(--secondary-text-color);
+}
+.location {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: var(--master-leter-spacing);
+  color: var(--secondary-text-color);
+}
+.address-company {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: var(--master-leter-spacing);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.location:hover,
+.address-company:hover {
+  color: var(--accent-color);
+}
+.location:focus,
+.address-company:focus {
+  color: var(--accent-color);
+}
+/* ======================PORTFOLIO============================= */
+/* =====================ART GALLERY========== */
+.portfolio-button {
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: var(--master-leter-spacing);
+  color: var(--master-heder-color);
+  background-color: #f5f4fa;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+.work-header:hover,
+.portfolio-text:hover {
+  color: var(--accent-color);
+}
+
+.work-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--master-heder-color);
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: var(--master-leter-spacing);
+  color: var(--master-text-color);
+}
