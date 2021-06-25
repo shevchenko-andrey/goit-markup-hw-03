@@ -113,7 +113,14 @@ body {
 .contact-list:not(:first-child) {
   margin-left: 50px;
 }
-
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 .menu-link {
   color: var(--master-heder-color);
 }
@@ -130,7 +137,15 @@ body {
 .hero {
   background-color: #2f303a;
 }
+
+.hero-container {
+  margin: 0 auto;
+  padding: 200px 200px;
+}
 .hero-headline {
+  width: 696px;
+  margin: 0px auto 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -140,6 +155,13 @@ body {
   color: var(--secondary-text-color);
 }
 .button {
+  display: block;
+  margin: 0 auto;
+  border-style: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -159,6 +181,13 @@ body {
 
 /* ============Features OF OUR COMPANY===============*/
 
+.feature-title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 .feature-section-title {
   font-weight: 700;
   font-size: 14px;
