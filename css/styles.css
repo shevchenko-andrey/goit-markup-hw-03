@@ -7,6 +7,27 @@
   --master-heder-color: #212121;
   --secondary-text-color: #ffffff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
 
 .list {
   list-style: none;
@@ -19,7 +40,49 @@ body {
   font-family: var(--main-font);
   font-weight: 400;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+/* ============= COMPONENTS ============= */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: var(--master-leter-spacing);
+  color: var(--master-heder-color);
+}
+
 /* =====================HEADER=======================*/
+.header {
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.menu-item:not(:first-child) {
+  margin-left: 50px;
+}
+.menu-item:first-child {
+  margin-left: 93px;
+}
+
 .logo-link {
   font-family: var(--secondary-font);
   font-weight: 400;
@@ -33,6 +96,12 @@ body {
 }
 .menu,
 .header-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -41,6 +110,10 @@ body {
 .contact-link {
   color: var(--master-text-color);
 }
+.contact-list:not(:first-child) {
+  margin-left: 50px;
+}
+
 .menu-link {
   color: var(--master-heder-color);
 }
@@ -101,13 +174,7 @@ body {
   color: var(--master-text-color);
 }
 /* <=========================WHAT-WE-DO and TEAM============================= */
-.section-head {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: var(--master-leter-spacing);
-  color: var(--master-heder-color);
-}
+
 .team-section {
   background-color: #f5f4fa;
 }
