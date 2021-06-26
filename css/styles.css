@@ -2,6 +2,7 @@
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --master-leter-spacing: 0.03em;
+  --basic-content-indentation: 30px;
   --accent-color: #2196f3;
   --master-text-color: #757575;
   --master-heder-color: #212121;
@@ -49,12 +50,14 @@ body {
 }
 
 .section {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* ============= COMPONENTS ============= */
 .section-title {
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -67,6 +70,7 @@ body {
 .header-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
 }
 .menu-link {
@@ -97,6 +101,7 @@ body {
 .header-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -182,14 +187,6 @@ body {
 /* ====================MAIN========================= */
 
 /* ============Features OF OUR COMPANY===============*/
-
-.feature-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 94px 0;
-  margin-left: -30px;
-}
 .feature-title {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -197,8 +194,17 @@ body {
   height: 1px;
   margin: -1px;
 }
+.feature-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: calc(-1 * var(--basic-content-indentation));
+}
+
 .feature-list-item {
   margin-left: 30px;
+  width: 270px;
 }
 .feature-section-title {
   margin-bottom: 10px;
@@ -215,8 +221,23 @@ body {
   letter-spacing: var(--master-leter-spacing);
   color: var(--master-text-color);
 }
-/* <=========================WHAT-WE-DO and TEAM============================= */
-
+/* <=========================servises and TEAM============================= */
+/* .servises-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+.servises-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: calc(-1 * var(--basic-content-indentation));
+}
+.servises-item {
+  margin-left: var(--basic-content-indentation);
+}
 .team-section {
   background-color: #f5f4fa;
 }
