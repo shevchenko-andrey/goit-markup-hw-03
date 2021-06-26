@@ -63,8 +63,7 @@ body {
 }
 
 /* =====================HEADER=======================*/
-.header {
-}
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -124,6 +123,9 @@ body {
 .menu-link {
   color: var(--master-heder-color);
 }
+.current {
+  color: var(--accent-color);
+}
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
@@ -160,8 +162,8 @@ body {
   border-style: none;
   border-radius: 4px;
   padding: 10px 32px;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -181,6 +183,13 @@ body {
 
 /* ============Features OF OUR COMPANY===============*/
 
+.feature-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 94px 0;
+  margin-left: -30px;
+}
 .feature-title {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -188,7 +197,11 @@ body {
   height: 1px;
   margin: -1px;
 }
+.feature-list-item {
+  margin-left: 30px;
+}
 .feature-section-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
