@@ -200,7 +200,7 @@ body {
 
 .feature-list-item {
   margin-left: 30px;
-  width: 270px;
+  flex-basis: calc(100% / 4 - var(--basic-content-indentation));
 }
 .feature-section-title {
   margin-bottom: 10px;
