@@ -65,6 +65,18 @@ body {
   letter-spacing: var(--master-leter-spacing);
   color: var(--master-heder-color);
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 /* =====================HEADER=======================*/
 .header {
@@ -74,15 +86,12 @@ body {
 }
 .header-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
 .menu-link {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  /* align-items: center; */
 }
 .menu-item:not(:first-child) {
   margin-left: 50px;
@@ -105,7 +114,6 @@ body {
 .menu,
 .header-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -124,7 +132,6 @@ body {
 }
 .navigation {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -183,16 +190,9 @@ body {
 /* ====================MAIN========================= */
 
 /* ============Features OF OUR COMPANY===============*/
-.feature-title {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+
 .feature-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin-left: calc(-1 * var(--basic-content-indentation));
@@ -223,7 +223,6 @@ body {
 }
 .servises-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin-left: calc(-1 * var(--basic-content-indentation));
@@ -237,7 +236,6 @@ body {
 }
 .team-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin-left: calc(-1 * var(--basic-content-indentation));
@@ -251,8 +249,8 @@ body {
   overflow: hidden;
 }
 .team-card {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: var(--basic-content-indentation);
+  padding-bottom: var(--basic-content-indentation);
   width: 270px;
   text-align: center;
   background: #ffffff;
@@ -321,14 +319,17 @@ body {
 }
 /* ======================PORTFOLIO============================= */
 /* =====================ART GALLERY========== */
-.galery-title {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-left: -8px;
+  margin-bottom: 50px;
 }
 .portfolio-button {
+  margin-left: 8px;
+  padding: 6px 22px;
+
+  border: none;
   cursor: pointer;
   font-family: var(--main-font);
   font-weight: 500;
@@ -338,17 +339,41 @@ body {
   color: var(--master-heder-color);
   background-color: #f5f4fa;
 }
+.active {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
-.work-header:hover,
-.portfolio-text:hover {
-  color: var(--accent-color);
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--basic-content-indentation));
+  margin-bottom: calc(-1 * var(--basic-content-indentation));
+}
+.gallery-item {
+  margin-left: var(--basic-content-indentation);
+  margin-bottom: var(--basic-content-indentation);
+  flex-basis: calc(100% / 3 - var(--basic-content-indentation));
+
+  border: 1px solid #eeeeee;
+}
+.work-card {
+  background-color: #ffffff;
+  padding: 20px 24px;
+}
+.gallery-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.work-header {
+.work-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
