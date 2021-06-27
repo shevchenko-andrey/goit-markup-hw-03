@@ -28,6 +28,7 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .list {
@@ -234,7 +235,32 @@ body {
 .team-section {
   background-color: #f5f4fa;
 }
+.team-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: calc(-1 * var(--basic-content-indentation));
+}
+.team-item {
+  margin-left: var(--basic-content-indentation);
+  flex-basis: calc(100% / 4 - var(--basic-content-indentation));
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 270px;
+  text-align: center;
+  background: #ffffff;
+}
+
 .team-title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -250,8 +276,13 @@ body {
 /* =======================FOOTER========================= */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -267,6 +298,9 @@ body {
   line-height: 1.7;
   letter-spacing: var(--master-leter-spacing);
   color: var(--secondary-text-color);
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-company {
   font-style: normal;
