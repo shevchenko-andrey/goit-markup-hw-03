@@ -330,6 +330,7 @@ body {
   padding: 6px 22px;
 
   border: none;
+  border-radius: 4px;
   cursor: pointer;
   font-family: var(--main-font);
   font-weight: 500;
